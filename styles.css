@@ -1,1 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+* {
+    font-family: "Shantell Sans", sans-serif;
+}
+
+.card-grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	justify-content: center;
+}
+
+.card-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
