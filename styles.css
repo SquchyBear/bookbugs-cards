@@ -21,15 +21,58 @@
     font-family: "Shantell Sans", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--bg-color);
+}
+
 .card-grid {
     display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 20px;
 	justify-content: center;
+    background-color: var(--card-color);
 }
 
 .card-grid img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.card-grid p {
+    text-align: center;
+    background-color: var(--text-bg-color);
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch svg {
+    fill: var(--text-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
 }
