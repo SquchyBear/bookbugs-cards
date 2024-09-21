@@ -24,9 +24,13 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     background-color: var(--bg-color);
+}
+
+h1 {
+    color: var(--text-color);
 }
 
 .card-grid {
@@ -46,6 +50,8 @@ body {
 .card-grid p {
     text-align: center;
     background-color: var(--text-bg-color);
+    border-radius: 5px;
+    color: var(--text-color);
 }
 
 #theme-switch {
